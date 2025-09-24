@@ -1,0 +1,67 @@
+.app-container {
+border-radius: 6px;
+background: #f9f9f9;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+
+.controls button:hover, .footer button:hover, .actions button:hover {
+background: #e6e6e6;
+}
+
+
+.quote-viewer {
+position: relative;
+height: 250px;
+overflow: hidden;
+}
+
+
+.quote-content {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+opacity: 0;
+animation: fadeIn 0.6s forwards;
+}
+
+
+blockquote {
+font-size: 1.2rem;
+font-weight: 500;
+margin-bottom: 12px;
+}
+
+
+.author {
+font-size: 0.9rem;
+color: #666;
+}
+
+
+.actions {
+margin-top: 10px;
+display: flex;
+gap: 10px;
+}
+
+
+.actions .liked {
+background: #ffe6f0;
+border-color: #ff99c2;
+}
+
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateX(20px); }
+to { opacity: 1; transform: translateX(0); }
+}
